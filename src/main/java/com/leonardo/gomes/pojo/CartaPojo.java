@@ -169,7 +169,7 @@ public class CartaPojo {
 	public void setRulings(List<RulingPojo> rulings) {
 		this.rulings = rulings;
 	}
-	public List<ForeignNamePojo> getForeignNames() {
+	public List<ForeignNamePojo> getForeignNames() {		
 		return foreignNames;
 	}
 	public void setForeignNames(List<ForeignNamePojo> foreignNames) {

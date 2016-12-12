@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head lang="pt-br">
+		<title>Home</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+		<script th:src="@{/js/jquery.js}"></script>
+		<script th:src="@{/js/bootstrap.js}"></script>		
+		<script th:src="@{/js/importaCartas.js}"></script>	
+	</head>
+	<body onload="showModal()">
+	 	<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Requisição Enviada</h4>
+		      </div>
+		      <div class="modal-body">
+		        Sua solicitação foi enviada para o servidor e será processada o mais breve possível!
+		      </div>
+		      <div class="modal-footer">
+			      <a href="/admin">
+			      	<button type="button" class="btn btn-success">Ok</button>
+			      </a>        
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>
